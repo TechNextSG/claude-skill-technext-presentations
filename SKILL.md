@@ -70,7 +70,12 @@ TechNext presents from interactive HTML decks: every map, pipeline, Odoo screen 
 2. **Promote** each new rule. A content rule goes to `reference/content-rules.md`. A user rule also goes to the Non-negotiables table above. An engine or build change goes to `engine.md` or `build-and-ship.md`. A new or changed slide goes to its deck's section in `decks.md`. A repeatable job goes to `recipes.md`.
 3. **Automate** a check that was missed twice, or that the user had to point out: extend `scripts/deck_check.py`, and prove it catches the bad case.
 4. **Publish** the skill:
-   - Run `python ~/ClaudeWork/technext-claude-skills/tools/build_skills.py`.
-   - Commit and push that repo (TechNextSG/technext-claude-skills).
+   - Run `python ~/ClaudeWork/technext-claude-skills/tools/build_skills.py --push` (pushes this skill's repo and the Claude Skills site).
    - Check that https://technextsg.github.io/technext-claude-skills/ returns 200.
 5. **Remember:** update `project_technext_html_presentations.md` (the deck list, the last commit, `ASSET_V`, anything decided).
+
+## Last step: update the repo (owner rule, 2026-10-11)
+Every time this skill is used, and after any lesson or rule is added to it, finish with
+`python ~/ClaudeWork/technext-claude-skills/tools/build_skills.py --push`. It mirrors this folder to its own public repo
+https://github.com/TechNextSG/claude-skill-technext-presentations and rebuilds https://technextsg.github.io/technext-claude-skills/
+(it only commits what changed). Report the repo commit in the status, or the error if the push failed.
