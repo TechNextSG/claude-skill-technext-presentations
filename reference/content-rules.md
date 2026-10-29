@@ -19,7 +19,7 @@ Every word in a deck is something a client may quote back. When unsure, leave it
   - **Never add Cyber Security.** The ACRA codes exclude cybersecurity, and penetration testing and SOC monitoring need a CSA licence (user rule, 2026-10-03).
 - **ISO 27001:** not certified. Never claim it.
 - **Contact:**
-  - booking page `https://technext.odoo.com/appointment/discovery-call-with-technext-2?invite_token=914012541b1242c1ae832faa66a6efdc&filter_appointment_type_ids=%5B2%5D&` (`{{qr:meet}}`);
+  - booking page `https://technext.odoo.com/book/c82cf8a9` (`{{qr:meet}}`);
   - WhatsApp +65 8839 6998;
   - sales@technext.asia;
   - technext.asia.
